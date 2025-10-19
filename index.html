@@ -34,7 +34,7 @@ multiping demo ecr-repo-creator https://github.com/babs/ecr-repo-creator
 ecr-repo-creator is a small tool to create AWS ECR repository if missing, staticly built to have no dependencies. It can also apply policies on newly created repos.">
   <meta itemprop="datePublished" content="2024-08-17T00:59:44+02:00">
   <meta itemprop="dateModified" content="2024-08-17T00:59:44+02:00">
-  <meta itemprop="wordCount" content="618">
+  <meta itemprop="wordCount" content="818">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="babs.github.io">
   <meta name="twitter:description" content="projectsmultiping https://github.com/babs/multiping
@@ -206,6 +206,26 @@ ecr-repo-creator is a small tool to create AWS ECR repository if missing, static
         </a>
       </li>
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#runstats">runstats
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#fastapi-structured-logging">fastapi-structured-logging
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#externalsecret-refresh">externalsecret-refresh
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#ebpf4fun-ring">ebpf4fun-ring
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#oci-toolbox">oci-toolbox
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
         <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#pre-commit-hooks">pre-commit-hooks
         </a>
       </li>
@@ -327,6 +347,21 @@ ecr-repo-creator is a small tool to create AWS ECR repository if missing, static
 <p><code>ecr-repo-creator</code> is a small tool to create AWS ECR repository if missing, staticly built to have no dependencies.
 It can also apply policies on newly created repos.</p>
 <p>There is also an example of Gitlab CI component that using it in glci-example ;-)</p>
+<h2>runstats<span class="hx-absolute -hx-mt-20" id="runstats"></span>
+    <a href="#runstats" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><a href="https://github.com/babs/runstats" target="_blank" rel="noopener">https://github.com/babs/runstats</a></p>
+<p><code>runstats</code> is a lightweight command wrapper that measures and reports resource usage metrics for any command. It executes a command and collects detailed resource usage statistics, including memory consumption, CPU time, I/O operations, and context switches. It outputs metrics as JSON to stderr while transparently passing through the command&rsquo;s stdin, stdout, and stderr.</p>
+<h2>fastapi-structured-logging<span class="hx-absolute -hx-mt-20" id="fastapi-structured-logging"></span>
+    <a href="#fastapi-structured-logging" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><a href="https://github.com/babs/fastapi-structured-logging" target="_blank" rel="noopener">https://github.com/babs/fastapi-structured-logging</a></p>
+<p><code>fastapi-structured-logging</code> is a lightweight Python module that provides structured logging utilities and a configurable FastAPI access logging middleware. It configures <code>structlog</code> for JSON or console output, enriches log events with OpenTelemetry trace and span identifiers, and exposes an <code>AccessLogMiddleware</code> for comprehensive request logging.</p>
+<h2>externalsecret-refresh<span class="hx-absolute -hx-mt-20" id="externalsecret-refresh"></span>
+    <a href="#externalsecret-refresh" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><a href="https://github.com/babs/externalsecret-refresh" target="_blank" rel="noopener">https://github.com/babs/externalsecret-refresh</a></p>
+<p><code>externalsecret-refresh</code> is a container to be used as Kubernetes Job that triggers ExternalSecrets to refresh by patching their annotations and monitors the refresh status. It&rsquo;s designed for integration with Helm Charts or ArgoCD applications.</p>
+<h2>ebpf4fun-ring<span class="hx-absolute -hx-mt-20" id="ebpf4fun-ring"></span>
+    <a href="#ebpf4fun-ring" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><a href="https://github.com/babs/ebpf4fun-ring" target="_blank" rel="noopener">https://github.com/babs/ebpf4fun-ring</a></p>
+<p><code>ebpf4fun-ring</code> is an eBPF playground and experimentation project for DNS packet capture using BPF ring buffers. It monitors network interfaces and captures DNS queries/responses for inspection and analysis.</p>
+<h2>oci-toolbox<span class="hx-absolute -hx-mt-20" id="oci-toolbox"></span>
+    <a href="#oci-toolbox" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><a href="https://github.com/babs/oci-toolbox" target="_blank" rel="noopener">https://github.com/babs/oci-toolbox</a></p>
+<p><code>oci-toolbox</code> is an OCI image with multiple tools to manipulate OCI images, manifests, and Helm charts. It includes tools like skopeo, oras, helm, jq, yq, ecr-repo-creator, and more for container image operations.</p>
 <h2>pre-commit-hooks<span class="hx-absolute -hx-mt-20" id="pre-commit-hooks"></span>
     <a href="#pre-commit-hooks" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>(replaces check-argocd-yaml)</p>
 <p><a href="https://github.com/babs/pre-commit-hooks" target="_blank" rel="noopener">https://github.com/babs/pre-commit-hooks</a> (replaces <a href="https://github.com/babs/check-argocd-yaml" target="_blank" rel="noopener">https://github.com/babs/check-argocd-yaml</a>)</p>
