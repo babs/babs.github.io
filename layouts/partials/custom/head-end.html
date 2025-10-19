@@ -1,0 +1,6 @@
+{{ if .GitInfo -}}
+<meta name="source-commit" content="{{ .GitInfo.Hash }}">
+<meta name="source-commit-short" content="{{ .GitInfo.AbbreviatedHash }}">
+<meta name="source-commit-date" content="{{ dateFormat "2006-01-02" .GitInfo.AuthorDate }}">
+<meta name="source-commit-subject" content="{{ .GitInfo.Subject }}">
+{{- end }}
