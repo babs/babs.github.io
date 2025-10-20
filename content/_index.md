@@ -22,7 +22,7 @@ https://github.com/babs/ecr-repo-creator
 `ecr-repo-creator` is a small tool to create AWS ECR repository if missing, staticly built to have no dependencies.
 It can also apply policies on newly created repos.
 
-There is also an example of Gitlab CI component that using it in glci-example ;-)
+There is also an example of Gitlab CI component that using it in [glci-example](https://github.com/babs/ecr-repo-creator/blob/master/glci-example) ;-)
 
 ## runstats
 
