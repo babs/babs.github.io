@@ -14,7 +14,8 @@ A curated subset — the most technically interesting work, where the challenge 
 * **[cosanet](#cosanet)** — Prometheus exporter that walks every container sandbox on a node to expose conntrack, `/proc/net/snmp`, and netstat metrics — no per-pod instrumentation.
 * **[ebpf4fun-ring](#ebpf4fun-ring)** — eBPF playground capturing DNS via BPF ring buffers, with dynamic interface attach and pod resolution.
 * **[claude-quota](#claude-quota)** — Cross-platform systray (Linux/Windows/macOS) reading Claude OAuth credentials, polling usage API, and rendering live burn-rate projection.
-* **[multiping](#multiping)** — ICMP/TCP multi-target probing CLI with state-transition logging. ~26 stars on GitHub.
+* **[multiping](#multiping)** — ICMP/TCP multi-target probing CLI with state-transition logging. 27 stars on GitHub.
+* **[phototag](#phototag)** — Offline photo-tagging tool — RAM++ open-vocab labels, CLIP embeddings, UMAP+HDBSCAN clustering, RetinaFace/ArcFace face pipeline. CLI + FastAPI UI.
 * **[aNag](#anag)** — Unofficial Nagios/Icinga/Thruk Android client. 100K+ installs, 4.7★ on Google Play.
 
 ## AI & LLM Tooling
@@ -40,6 +41,12 @@ https://github.com/babs/claude-quota
 https://github.com/babs/claude-code-sandbox
 
 `claude-code-sandbox` is a Docker-based sandbox for running Claude Code CLI in an isolated container with persistent credentials.
+
+### phototag
+
+https://github.com/babs/phototag
+
+`phototag` is a local, single-user photo-tagging and face-management tool. Scans a folder, tags every image with **RAM++** (~4500 open-vocabulary labels), embeds with **CLIP** for semantic search, clusters with **UMAP + HDBSCAN** to surface the corpus's natural taxonomy, and optionally detects + clusters faces via RetinaFace + ArcFace. CLI plus a single-page FastAPI UI. Runs offline — no telemetry, no cloud.
 
 ## Mobile
 
