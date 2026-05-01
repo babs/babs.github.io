@@ -5,6 +5,18 @@ ShowToc: true
 TocOpen: false
 ---
 
+## Featured
+
+A curated subset — the most technically interesting work, where the challenge was non-trivial.
+
+* **[mcp-auth-proxy](#mcp-auth-proxy)** — OAuth 2.1 authorization server fronting any OIDC IdP for MCP clients. STRIDE-modeled, replay-protected, rate-limited discovery surface, per-tool metrics with cardinality cap.
+* **[inkwest](#inkwest)** — AI-powered Kubernetes debugging assistant. Read-only kubectl proxy with multi-cluster, OIDC, budget management, multi-provider LLM backends.
+* **[cosanet](#cosanet)** — Prometheus exporter that walks every container sandbox on a node to expose conntrack, `/proc/net/snmp`, and netstat metrics — no per-pod instrumentation.
+* **[ebpf4fun-ring](#ebpf4fun-ring)** — eBPF playground capturing DNS via BPF ring buffers, with dynamic interface attach and pod resolution.
+* **[claude-quota](#claude-quota)** — Cross-platform systray (Linux/Windows/macOS) reading Claude OAuth credentials, polling usage API, and rendering live burn-rate projection.
+* **[multiping](#multiping)** — ICMP/TCP multi-target probing CLI with state-transition logging. ~26 stars on GitHub.
+* **[aNag](#anag)** — Unofficial Nagios/Icinga/Thruk Android client. 100K+ installs, 4.7★ on Google Play.
+
 ## AI & LLM Tooling
 
 ### Inkwest
@@ -98,6 +110,12 @@ helm repo add babs https://babs.github.io/helm-charts
 
 * `babs/extra-objects` — a chart that instantiates objects from an `extraObjects` array. Useful when a primary Helm chart lacks this support.
 
+### helm-registry-mirrors
+
+https://github.com/babs/helm-registry-mirrors
+
+Helm chart that deploys multiple OCI registry mirrors in one shot — `docker.io`, `quay.io`, `gcr.io`, `ghcr.io`, `public.ecr.aws` — with per-mirror storage and ingress configuration.
+
 ### k8s-ps1.sh
 
 https://github.com/babs/k8s-ps1.sh
@@ -187,6 +205,12 @@ init_root_logger(level=10)
 ```
 
 ## Auth & Identity
+
+### mcp-auth-proxy
+
+https://github.com/babs/mcp-auth-proxy
+
+`mcp-auth-proxy` is an OAuth 2.1 authorization server that fronts any OIDC IdP, so MCP clients (Claude Desktop, Cursor, Claude Code, MCP Inspector) can talk to a private MCP server without writing any auth code. Strict OAuth 2.1 posture, replay protection, per-tool metrics with cardinality cap, configurable rate limits on `/.well-known/*`, security-headers middleware, and STRIDE-modeled threat coverage.
 
 ### Teams Notifier
 

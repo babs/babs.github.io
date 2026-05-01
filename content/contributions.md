@@ -7,12 +7,23 @@ TocOpen: false
 
 Open source contributions to projects I don't maintain — bug fixes, features, translations, and docs.
 
+## realiti4/claude-swap
+
+* [Store backups under $XDG_DATA_HOME on Linux/WSL](https://github.com/realiti4/claude-swap/pull/27) — 2026
+
 ## root-gg/plik
 
 Added generic OIDC authentication with security hardening.
 
 * [Extract id_token claims, enforce email_verified, harden sub validation](https://github.com/root-gg/plik/pull/590) — 2026
 * [Add generic OIDC authentication provider](https://github.com/root-gg/plik/pull/548) — 2026
+
+## osscontainertools/kaniko
+
+CI rework on the community-maintained Kaniko fork.
+
+* [Rework CI for clarity](https://github.com/osscontainertools/kaniko/pull/419) — 2025
+* [Use GHCR as primary registry, separate dev builds from release](https://github.com/osscontainertools/kaniko/pull/368) — 2025
 
 ## rustfs/rustfs
 
