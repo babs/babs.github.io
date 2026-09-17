@@ -31,7 +31,8 @@ params:
     title: "Damien Degois"
     subtitle: |
       Head of SRE with 20+ years building and running infrastructure at scale.
-      I like Go, Python, and solving operational problems with minimal, self-contained tools.
+      Tool builder and tool fixer: I patch my stack upstream or build the missing
+      piece, mostly in Go and Python. AI with disciplined enthusiasm.
     imageUrl: "https://avatars.githubusercontent.com/u/117580?v=4"
     imageWidth: 240
     imageHeight: 240

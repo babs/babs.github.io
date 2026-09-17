@@ -14,7 +14,11 @@ A curated subset — the most technically interesting work, where the challenge 
 * **[cosanet](#cosanet)** — Prometheus exporter that walks every container sandbox on a node to expose conntrack, `/proc/net/snmp`, and netstat metrics — no per-pod instrumentation.
 * **[ebpf4fun-ring](#ebpf4fun-ring)** — eBPF playground capturing DNS via BPF ring buffers, with dynamic interface attach and pod resolution.
 * **[claude-quota](#claude-quota)** — Cross-platform systray (Linux/Windows/macOS) reading Claude OAuth credentials, polling usage API, and rendering live burn-rate projection.
-* **[multiping](#multiping)** — ICMP/TCP multi-target probing CLI with state-transition logging. 27 stars on GitHub.
+* **[bifrons](#bifrons)** — Database access portal: auth-remapping proxies (MySQL/PostgreSQL/MongoDB) + Go control plane with dual-gate approval and OIDC login.
+* **[claude-watcher](#claude-watcher)** — Multi-frontend monitor for Claude Code sessions (GTK, TUI, web UI): live working/waiting status, per-session topics, subagent tracking.
+* **[grip-live-diff](#grip-live-diff)** — Markdown preview with GitHub's look, word-level diff of every save, and in-page annotations an agent answers through a JSON5 sidecar.
+* **[Teams Notifier](#teams-notifier)** — Bot + APIs replacing retired MS Teams webhooks: per-conversation tokens, message lifecycle (post/update/delete), GitLab MR and Jira cards.
+* **[multiping](#multiping)** — ICMP/TCP multi-target probing CLI with state-transition logging. 31 stars on GitHub.
 * **[phototag](#phototag)** — Offline photo-tagging tool — RAM++ open-vocab labels, CLIP embeddings, UMAP+HDBSCAN clustering, RetinaFace/ArcFace face pipeline. CLI + FastAPI UI.
 * **[aNag](#anag)** — Unofficial Nagios/Icinga/Thruk Android client. 100K+ installs, 4.7★ on Google Play.
 
@@ -36,11 +40,29 @@ https://github.com/babs/claude-quota
 | :---------------------------: | :-------------------------------------: | :-----------------------------------: |
 | ![Systray icon](https://raw.githubusercontent.com/babs/claude-quota/master/img/icon.png) | ![Hover tooltip](https://raw.githubusercontent.com/babs/claude-quota/master/img/hover-tooltip.png) | ![Context menu](https://raw.githubusercontent.com/babs/claude-quota/master/img/context-menu.png) |
 
+### claude-watcher
+
+https://github.com/claude-watcher
+
+`claude-watcher` is a multi-frontend monitor for Claude Code sessions (GTK widget, TUI, and web UI) showing live working/waiting/idle status derived from transcripts, per-session topic lines, subagent counts, and worktree sessions. Co-maintained; I contribute across the [gtk](https://github.com/claude-watcher/gtk), [tui](https://github.com/claude-watcher/tui), and [webui](https://github.com/claude-watcher/webui) frontends.
+
 ### claude-code-sandbox
 
 https://github.com/babs/claude-code-sandbox
 
 `claude-code-sandbox` is a Docker-based sandbox for running Claude Code CLI in an isolated container with persistent credentials.
+
+### skills
+
+https://github.com/babs/skills
+
+`skills` is my Claude Code skills collection, packaged to install two ways from the same repo: as a Claude Code plugin/marketplace (`claude plugin install babs@babs-skills`) and as [skills.sh](https://skills.sh) skills, usable from Cursor, Codex, and any agent reading the `SKILL.md` standard. 13 skills covering project scaffolding (`go-init`, `python-init`, `fullstack-init`, `dockerfile-init`), a layered review pipeline (`my-review`, `iterative-review`, `swarm-review`), and a spec → implement → ship workflow (`spec-feature`, `ship-feature`, `implement-loop`, `smart-commit`).
+
+### grip-live-diff
+
+https://github.com/babs/grip-live-diff
+
+`grip-live-diff` is a single Go binary that renders a Markdown file with GitHub's look, reloads on every save, and highlights what changed, word by word, inside the rendered page. Three diff references (since open, last save, git `HEAD`), a VS Code style minimap, and annotations: select a passage, type what should change, and the comment lands in a JSON5 sidecar next to the file that an agent answers in place. Built for reading a spec while Claude Code rewrites it. Forked from [go-grip](https://github.com/chrishrb/go-grip).
 
 ### phototag
 
@@ -55,6 +77,12 @@ https://github.com/babs/phototag
 https://play.google.com/store/apps/details?id=info.degois.damien.android.aNag
 
 `aNag` is the unofficial [Nagios](https://www.nagios.org/) / [Icinga](https://icinga.com/) / [Thruk](https://www.thruk.org/) / [Naemon](https://www.naemon.io/) client for Android. Features custom notifications, passive check submission, enable/disable notifications, recheck, and downtime management. 100K+ installs, 4.7 stars on Google Play.
+
+### aNag-backup-codec
+
+https://github.com/babs/aNag-backup-codec
+
+`aNag-backup-codec` converts aNag preference backups (`.bak`) to and from a hybrid JSON format, for inspection, diffing, bulk edits, and migration between installs.
 
 ## Networking & DNS
 
@@ -93,11 +121,11 @@ https://github.com/cosanet/cosanet
 
 `cosanet` is a Prometheus exporter for collecting advanced network statistics from Linux hosts and Kubernetes pods. Deployed as a DaemonSet, it collects metrics from all container sandboxes (conntrack, /proc/net/snmp, netstat) without requiring instrumentation of individual pods.
 
-### externalsecret-refresh
+### externalsecrets-refresh
 
-https://github.com/babs/externalsecret-refresh
+https://github.com/babs/externalsecrets-refresh
 
-`externalsecret-refresh` is a container designed as a Kubernetes Job that triggers ExternalSecrets to refresh by patching their annotations and monitors completion. Built for Helm Charts and ArgoCD workflows.
+`externalsecrets-refresh` is a container designed as a Kubernetes Job that triggers ExternalSecrets to refresh by patching their annotations and monitors completion. Built for Helm Charts and ArgoCD workflows.
 
 ### argocd-app-helm-version
 
@@ -147,6 +175,12 @@ https://github.com/babs/pre-commit-hooks (replaces https://github.com/babs/check
 https://github.com/kaniko-build/builder
 
 `kaniko-build/builder` builds and publishes OCI images from public Kaniko forks ([osscontainertools](https://github.com/osscontainertools/kaniko), [chainguard-forks](https://github.com/chainguard-forks/kaniko)) to GHCR, providing ready-to-use executor and warmer images.
+
+### ecr-prime
+
+https://github.com/babs/ecr-prime
+
+`ecr-prime` is a write-first Amazon ECR create-on-push primer for cross-account pushes (IRSA / Pod Identity). Single static binary.
 
 ### ecr-repo-creator
 
@@ -213,6 +247,12 @@ init_root_logger(level=10)
 
 ## Auth & Identity
 
+### bifrons
+
+https://github.com/bifrons-sh/bifrons
+
+`bifrons` is a database access portal: auth-remapping proxies for MySQL, PostgreSQL and MongoDB fronted by a Go control plane. Users log in with OIDC, request access through a dual-gate approval workflow, and the proxy transparently remaps their identity to real database credentials. No shared passwords, full audit trail.
+
 ### mcp-auth-proxy
 
 https://github.com/babs/mcp-auth-proxy
@@ -221,9 +261,16 @@ https://github.com/babs/mcp-auth-proxy
 
 ### Teams Notifier
 
-https://github.com/teams-notifier
+https://github.com/teams-notifier — docs at [teams-notifier.github.io](https://teams-notifier.github.io/)
 
-`Teams Notifier` replaces deprecated MS Teams webhooks with an interactive bot for sending, updating, and deleting messages programmatically.
+`Teams Notifier` replaces the retired MS Teams webhooks with a bot and a set of APIs to post, update and delete messages in channels and group chats, with a dedicated token per user and conversation for auditability. Core and add-ons:
+
+* [`bf-directline-endpoint`](https://github.com/teams-notifier/bf-directline-endpoint) — Bot Framework endpoint: receives Teams events and issues a conversation token by private message when the bot is @mentioned.
+* [`activity-api`](https://github.com/teams-notifier/activity-api) — send / update / delete messages against a conversation token; addresses each conversation at its own Teams service URL.
+* [`gitlab-mr-api`](https://github.com/teams-notifier/gitlab-mr-api) — one card per merge request, updated through its lifecycle from GitLab webhooks, deleted on merge or close.
+* [`jira-api`](https://github.com/teams-notifier/jira-api) — expandable issue cards from Jira webhooks or Jira Automation, HMAC-authenticated.
+
+![Merge request card](https://teams-notifier.github.io/docs/deployment/addons/gitlab-mr-api/merge-request-card-example.png)
 
 ### observium-header-authentication
 
