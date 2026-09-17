@@ -7,8 +7,30 @@ TocOpen: false
 
 Open source contributions to projects I don't maintain — bug fixes, features, translations, and docs.
 
+## IsmaelMartinez/teams-for-linux
+
+* [Take a document title change as in-page route consumption (deeplinks)](https://github.com/IsmaelMartinez/teams-for-linux/pull/2985) — 2026 (open)
+
+## OpenActionAPI/plugins
+
+* [Catalogue: add the two rotary OpenDeck plugins](https://github.com/OpenActionAPI/plugins/pull/11) — 2026
+
+## olivier-j/ccanalyzer
+
+* [Add tool/skill/MCP usage dashboard](https://github.com/olivier-j/ccanalyzer/pull/2) — 2026
+* [Add sortable columns to project and session tables](https://github.com/olivier-j/ccanalyzer/pull/1) — 2026
+
+## datvm/TimberbornMods
+
+* [Add FillValveSettings for building duplication (ModdableTimberborn)](https://github.com/datvm/TimberbornMods/pull/33) — 2026
+
+## mobydeck/atch
+
+* [Harden session directory, stale-socket unlink, and clear path handling](https://github.com/mobydeck/atch/pull/38) — 2026 (open)
+
 ## realiti4/claude-swap
 
+* [Tolerate throwaway artifacts in legacy→XDG migration](https://github.com/realiti4/claude-swap/pull/35) — 2026
 * [Store backups under $XDG_DATA_HOME on Linux/WSL](https://github.com/realiti4/claude-swap/pull/27) — 2026
 
 ## root-gg/plik
@@ -20,8 +42,9 @@ Added generic OIDC authentication with security hardening.
 
 ## osscontainertools/kaniko
 
-CI rework on the community-maintained Kaniko fork.
+CI rework and tracing hardening on the community-maintained Kaniko fork.
 
+* [Harden span export and telemetry semantics](https://github.com/osscontainertools/kaniko/pull/913) — 2026
 * [Rework CI for clarity](https://github.com/osscontainertools/kaniko/pull/419) — 2025
 * [Use GHCR as primary registry, separate dev builds from release](https://github.com/osscontainertools/kaniko/pull/368) — 2025
 
@@ -31,7 +54,7 @@ CI rework on the community-maintained Kaniko fork.
 
 ## nabsul/k8s-ecr-login-renew
 
-* [Add post-install/upgrade Job + refactor CronJob templates](https://github.com/nabsul/k8s-ecr-login-renew/pull/81) — 2025
+* [Add post-install/upgrade Job + refactor CronJob templates](https://github.com/nabsul/k8s-ecr-login-renew/pull/81) — 2025 (open)
 
 ## chainguard-forks/kaniko
 
@@ -39,7 +62,7 @@ CI rework on the community-maintained Kaniko fork.
 
 ## hacf-fr/freebox-api
 
-* [Add get_backup_lte_status](https://github.com/hacf-fr/freebox-api/pull/808) — 2025
+* [Add get_backup_lte_status](https://github.com/hacf-fr/freebox-api/pull/808) — 2025 (open)
 
 ## external-secrets/external-secrets
 

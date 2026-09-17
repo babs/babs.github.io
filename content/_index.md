@@ -7,7 +7,7 @@ From [aNag](https://play.google.com/store/apps/dev?id=6417471173528158983) on An
 
 20+ years in infrastructure and operations, started in 2002. Went from bare metal to cloud native across several roles in France and the US:
 
-- **[SKEEPERS](https://skeepers.io/)** — Head of SRE / CloudOps (2024–present, remote) — team of 10, multi-cloud AWS/Azure/GCP, observability, platform reliability
+- **[SKEEPERS](https://skeepers.io/)** — Head of SRE / CloudOps (2024–present, remote) — team of 7, multi-cloud AWS/Azure/GCP, observability, platform reliability
 - **[Waycom - Adista](https://www.waycom.net/)** — Hosting Tech Lead (2021–2023, remote) — team of 5, infrastructure automation, SDN/IP fabric, multi-tenancy
 - **[Rue du Commerce - Groupe Carrefour](https://www.rueducommerce.fr/)** — Head of Production & CTO (2017–2020, Saint-Ouen) — team of 15, microservices transition, PCI DSS, budget management
 - **[Center.com EU](https://www.ingenio.com/)** — Head of Production (2010–2016, Paris & San Francisco) — 3 production sites across France & USA, datacenter migration, PCI DSS
